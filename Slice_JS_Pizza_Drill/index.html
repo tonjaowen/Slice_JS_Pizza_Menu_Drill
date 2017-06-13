@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href=	"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">	
+
+    <title>JS_Order_Form</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top" style="font-size:40px">Slice</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#order">Order Menu</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="intro-section">
+	 <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+				
+	
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:100px">Slice</h1>
+    
+    <a class="btn btn-default page-scroll" href="#about">Find out More!</a>
+	<br>
+	<br>
+	<br>
+	
+	<img src="images/slice_array.jpg"  style="width:940px;height:422px;">
+
+  </div>
+</div>
+			
+		</div>
+	</div>
+        
+         				
+        </div>
+            
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>About Us</h1>
+					
+					<p>Slice serves pizza with a purpose. If you're a programmer, bootcamper, or just looking for good pizza you've found the right place.  At Slice we serve only the best, fresh, and homemade ingredients, in an atmosphere that welcomes all things techie.</p>
+					<br>
+					<br>
+					<p>Join us for Tech talks every Thursday night from 6-9.  Subscribe on our contact page to get weekly updates on upcoming events.</p>
+					<br>
+					
+					<p>We now offer an online order menu with exceptionally fast delivery!</p>
+					<br>
+					<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/apple1.jpg" style="width:940px;height:422px;">
+  <img class="mySlides" src="images/apple.jpg" style="width:940px;height:422px;">
+  <img class="mySlides" src="images/jobs.jpg" style="width:940px;height:422px;">
+  <img class="mySlides" src="images/cool.jpg" style="width:940px;height:422px;">
+<img class="mySlides" src="images/comp.jpg" style="width:940px;height:422px;">
+<img class="mySlides" src="images/ibm.jpg" style="width:940px;height:422px;">
+<img class="mySlides" src="images/ibm1.jpg" style="width:940px;height:422px;">
+<img class="mySlides" src="images/download.jpg" style="width:940px;height:422px;">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order-Menu Section -->
+	
+    <section id="order" class="order-section">
+        <div class="container">
+		<div class="row">
+        <div class="col-sm-12">
+	  <h1 align="center">Order Menu</h1> 
+	  <p align="center">Please select from choices below</p>
+	  
+	<br>
+	<br>
+	
+ <!-- This is the Select Pizza Size Table. -->
+		<div class="row">
+		<div class="col-sm-4";>	
+		<div id="sizetable">
+			<h3 class="select">Select size</h3>
+			<input type="radio" name="size" value="Personal"> Personal<br>
+			<input type="radio" name="size" value="Medium"> Medium<br>
+			<input type="radio" name="size" value="Large"> Large<br>
+			<input type="radio" name="size" value="Extra-Large"> Extra-Large<br>
+			</div>
+		</div>
+				
+		<!-- This is the Select Cheese Table. -->
+    <div class="col-sm-4";>	
+	<div id="cheesetable">
+		<h3 class="select">Select cheese</h3>	
+			<input type="radio" name="cheese" value="No"> No Cheese<br>
+			<input type="radio" name="cheese" value="Regular"> Regular<br>
+			<input type="radio" name="cheese" value="Extra"> Extra Cheese<br>
+		</div>
+	</div>	
+	
+	<!-- This is the Select Crust Table. -->	
+	<div class="col-sm-4";>
+	<div id="crusttable">
+		<h3 class="select">Select crust</h3>
+			<input type="radio" name="crust" value="Plain"> Plain Crust<br>
+			<input type="radio" name="crust" value="Garlic Butter"> Garlic Butter Crust<br>
+			<input type="radio" name="crust" value="Cheese-Stuffed"> Cheese-Stuffed Crust<br>
+			<input type="radio" name="crust" value="Spicy"> Spicy Crust<br>
+			<input type="radio" name="crust" value="House Special"> House Special Crust<br>
+		</div>
+	</div>
+  			
+			<!-- This is the Select Sauce Table. -->		
+	<div class="row">
+    <div class="col-sm-4";
+	<div id="saucetable">
+		<h3 class="select">Select sauce</h3>
+		<div class="menu initiallyHidden">	
+			<input type="radio" name="sauce" value="Marinara"> Marinara Sauce<br>
+			<input type="radio" name="sauce" value="White"> White Sauce<br>
+			<input type="radio" name="sauce" value="Barbecue"> Barbecue Sauce<br>
+			<input type="radio" name="sauce" value="No"> No Sauce<br>
+		</div>
+	</div>
+	
+	
+	<!-- This is the Select Meat(s) Table. -->
+    <div class="col-sm-4";
+	<div id="meattable">
+		<h3 class="select">Select your choice of meat(s)</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="meat" value="Pepperoni"> Pepperoni<br>
+			<input type="checkbox" name="meat" value="Sausage"> Sausage<br>
+			<input type="checkbox" name="meat" value="Canadian Bacon"> Canadian Bacon<br>
+			<input type="checkbox" name="meat" value="Ground Beef"> Ground Beef<br>
+			<input type="checkbox" name="meat" value="Anchovies"> Anchovies<br>
+			<input type="checkbox" name="meat" value="Chicken"> Chicken<br>
+		</div>
+	</div>
+	
+	
+	<!-- This is the Select Veggies Table. -->
+    <div class="col-sm-4";	
+	<div id="vegtable">
+		<h3 class="selector">Select your choice of veggies(s)</h3>
+		<div class="menu initiallyHidden">
+			<input type="checkbox" name="veg" value="Tomatoes"> Fresh Tomatoes<br>
+			<input type="checkbox" name="veg" value="Onions"> Onions<br>
+			<input type="checkbox" name="veg" value="Olives"> Black Olives<br>
+			<input type="checkbox" name="veg" value="Green Peppers"> Green Peppers<br>
+			<input type="checkbox" name="veg" value="Mushrooms"> Mushrooms<br>
+			<input type="checkbox" name="veg" value="Pineapple"> Pineapple<br>
+			<input type="checkbox" name="veg" value="Spinach"> Spinach<br>
+			<input type="checkbox" name="veg" value="Jalape&ntildeo"> Jalape&ntildeo<br>
+		</div>
+	</div>
+	
+	<!-- This is the Submit Order Button. -->
+	
+    <div class="col-sm-12">
+	<button id="calc" type="submit" onclick="invoice()"style="color:blue;">Submit order</button>
+	<br><br>
+	</div>
+	
+	<!-- This is the Total Price Invoice Table. -->
+    <div class="col-sm-12">
+	<table class="pizza" style="width: 50%;" border="1" cellpadding="1">	
+	<tbody>
+			<tr>
+				<td id="size"></td>
+				<td id="sizeprice"></td>
+			</tr>
+			<tr>
+				<td id="crust"></td>
+				<td id="crustprice"></td>
+			</tr>
+			<tr>
+				<td id="cheese"></td>
+				<td id="cheeseprice"></td>
+			</tr>
+			<tr>
+				<td id="sauce"></td>
+				<td id="sauceprice"></td>
+			</tr>
+			<tr>
+				<td id="meat"></td>
+				<td id="meatprice"></td>
+			</tr>
+			<tr>
+				<td id="veg"></td>
+				<td id="vegprice"></td>
+			</tr>
+			<tr>
+			
+			<!-- Order-Menu Section -->
+    
+  			  <td><strong>TOTAL PRICE:</strong></td>
+				<td id="totalprice"></td>
+			</tr>
+		</tbody>
+	</table>
+	<br>
+	<br>	
+	
+</div>	
+</div>
+</div>
+<div>
+</div>
+
+</section>
+<br>
+<br>
+	
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Contact Us</h1>
+					<div class="jumbotron text-center">
+					<p>Subscribe below to get weekly updates on special events, tech talks, and other cool stuff!</p> 
+					<form class="form-inline">
+					<div class="input-group">
+					<input type="email" class="form-control" size="50" placeholder="Email Address" required>
+					<div class="input-group-btn">
+					<button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>			
+					<p>Hey, Stay in Touch!</p>
+					<br>
+					<img src="images/beard_pizza.jpg"  style="width:940px;height:422px;">
+					
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Scrolling Nav JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+	<!-- invoice -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
+	<script src="invoice.js"></script>
+
+
+</body>
+
+</html>
